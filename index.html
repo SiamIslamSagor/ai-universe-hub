@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Universe Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/85858dde4b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-4xl text-center my-8 text-gray-700 font-bold">
+        AI Universe Hub
+      </h2>
+    </header>
+
+    <main class="container mx-auto">
+      <section class="my-16">
+        <div
+          id="all-ai-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-sm:px-5"
+        ></div>
+      </section>
+
+      <!-- modal -->
+      <!-- You can open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="ai_detail.showModal()">open modal</button> -->
+      <dialog id="ai_detail" class="modal">
+        <form
+          method="dialog"
+          class="modal-box max-w-5xl h-[700px] flex items-center relative"
+        >
+          <div class="modal-action absolute -top-3 right-4">
+            <button class="bg-white outline-none">
+              <i class="fa-solid fa-circle-xmark text-4xl text-red-400"></i>
+            </button>
+          </div>
+          <div>
+            <div id="show-detail-container"></div>
+          </div>
+        </form>
+      </dialog>
+    </main>
+
+    <footer></footer>
+    <!-- script -->
+    <script src="./js/AI-universe-hub.js"></script>
+  </body>
+</html>
